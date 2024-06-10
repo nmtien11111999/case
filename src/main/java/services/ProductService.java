@@ -37,7 +37,7 @@ public class ProductService extends HttpServlet {
     }
 
     public void renderPageEditProduct(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, SQLException, ClassNotFoundException {
-        ProductAndCategory product = (ProductAndCategory) this.productmodel.findAll();
+        List<ProductAndCategory> product = this.productmodel.findAll();
         req.setAttribute("product", product);
         RequestDispatcher out = req.getRequestDispatcher("/view/edit.jsp");
         out.forward(req, resp);

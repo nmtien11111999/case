@@ -17,11 +17,12 @@
 <div class="container shadow">
     <form action="/product/edit" method="post">
         <div class="cart my-5">
-            Name<input type="text" name="id" readonly placeholder="id" value="${product.name}" class="btn-sm mb-3 form-control">
-            price<input type="text" name="name" placeholder="name" value="${product.price}" class="mb-3 form-control">
-            quantity<input type="text" name="price" placeholder="price" value="${product.quantity}" class="mb-3 form-control">
+            Name<input type="text" name="id" readonly placeholder="id" value="${product.id}" class="btn-sm mb-3 form-control">
+            Name<input type="text" name="name"  placeholder="id" value="${product.name}" class="btn-sm mb-3 form-control">
+            price<input type="text" name="price" placeholder="name" value="${product.price}" class="mb-3 form-control">
+            quantity<input type="text" name="quantity" placeholder="price" value="${product.quantity}" class="mb-3 form-control">
             Description<input type="text" name="description" placeholder="description" value="${product.description}" class="mb-3 form-control">
-            Category<input type="text" name="author" placeholder="author" value="${product.category}" class="mb-3 form-control">
+            Category<input type="text" name="category" placeholder="category" value="${product.category}" class="mb-3 form-control">
             <br>
             <button class="btn btn-primary w-100">Edit</button>
         </div>

@@ -23,7 +23,7 @@
         </div>
         <div class="card-body">
             <div class="text-end mb-2">
-                <a href="http://localhost:8080/books/create" class="btn btn-primary btn-sm">Add new Product</a>
+                <a href="http://localhost:8080/product/create" class="btn btn-primary btn-sm">Add new Product</a>
             </div>
             <table class="table table-hover table-bordered">
                 <thead>
@@ -44,14 +44,13 @@
                         <td>${product.name}</td>
                         <td class="text-end">${product.price}</td>
                         <td>${product.quantity}</td>
-                        <td class="text-center">
                         <td class="text-center">${product.color}</td>
-                        <td>${product.category}</td>
+                        <td>${product.nameCategory}</td>
                     </span>
                         </td>
                         <td class="text-center">
-                            <a class="btn btn-info btn-sm mx-1" href="http://localhost:8080/books/edit?id=${product.id}">Edit</a>
-                            <a class="btn btn-danger btn-sm" href="http://localhost:8080/books/delete?id=${product.id}">Delete</a>
+                            <a class="btn btn-info btn-sm mx-1" href="http://localhost:8080/product/edit?id=${product.id}">Edit</a>
+                            <a class="btn btn-danger btn-sm" href="http://localhost:8080/product/delete?id=${product.id}">Delete</a>
                         </td>
                     </tr>
                 </c:forEach>
